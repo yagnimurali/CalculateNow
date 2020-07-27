@@ -430,10 +430,6 @@ public class MainActivity extends AppCompatActivity {
     // Returns true if 'op2' has higher or same precedence as 'op1',
     // otherwise returns false.
     public boolean hasPrecedence(char op1, char op2)
-
-
-
-
     {
         if (op2 == '(' || op2 == ')')
             return false;
@@ -458,8 +454,6 @@ public class MainActivity extends AppCompatActivity {
             case '/':
                 if (b == 0)
                     mathArea.setText("Division by Zero");
-                    /*throw new
-                            UnsupportedOperationException("Cannot divide by zero");*/
                 return a / b;
         }
         return 0.0;
